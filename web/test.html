@@ -1,0 +1,31 @@
+import 'dart:html';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+void main() async {
+  try {
+    print('=== TESTE FIREBASE WEB ===');
+    
+    // Configurar Firebase
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.web,
+    );
+    print('Firebase inicializado!');
+    
+    // Testar autenticação
+    try {
+      await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: 'teste@teste.com',
+        password: '12345678',
+      );
+      print('Sucesso!');
+    } catch (e) {
+      print('Erro detalhado: $e');
+      window.alert('Erro: $e');
+    }
+  } catch (e) {
+    print('Erro ao inicializar: $e');
+    window.alert('Erro inicialização: $e');
+  }
+}

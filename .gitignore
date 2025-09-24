@@ -1,0 +1,49 @@
+# Arquivos gerados pelo Dart/Flutter.
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+
+# Arquivos gerados pelo pub.
+.pub-cache/
+
+# Arquivos de configuração de IDEs.
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Arquivos de log e diagnóstico.
+app*.log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase.json
+# Arquivos de sistema operacional.
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração do Firebase.
+# Ótima prática para não expor suas chaves de API!
+# O comando `flutterfire configure` gera este arquivo.
+# Cada desenvolvedor deve gerar o seu ao configurar o projeto.
+lib/firebase_options.dart
+
+# Arquivos específicos do Android.
+android/app/google-services.json
+android/google-services.json
+android/key.properties
+android/local.properties
+android/.gradle
+android/gradle.properties
+
+# Arquivos específicos do iOS.
+ios/Pods/
+ios/Podfile.lock
+ios/Runner/GoogleService-Info.plist
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/engine.xcframework
